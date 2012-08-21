@@ -23,7 +23,7 @@ def get_days_left(end_date):
 def check_date_format(datestring):
 	date_format = "%d-%m-%Y"
 	try:
-		datetime.datetime.strptime(end_date, date_format)
+		datetime.datetime.strptime(datestring, date_format)
 		return True
 	except ValueError:
 		return False
@@ -32,7 +32,6 @@ def multi_string(freq, string='*'):
 	return freq * string
 
 t_globals = {
-		'diff': diff,
 		'multi_string' : multi_string,
 		}
 
