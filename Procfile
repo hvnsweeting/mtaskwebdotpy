@@ -1,1 +1,1 @@
-web: python mtask.py
+web: python mtask.py ${PORT}
