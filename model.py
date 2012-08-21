@@ -2,7 +2,7 @@ import web
 import datetime
 
 #DB
-db = web.database(dbn='sqlite', db='/tmp/mtask2.db')
+db = web.database(dbn='sqlite', db='mtask.db')
 
 def get_tasks():
 	return db.select('tasks', order='enddate, priority DESC')
