@@ -20,7 +20,6 @@ db = web.database(dbn=d['dbn'],
                     user=d['user'],
                     pw=d['pw'],
                     host=d['host'],
-                    port=d['port']
                     )
 
 def get_tasks():
