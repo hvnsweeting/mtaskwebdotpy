@@ -1,2 +1,3 @@
 web.py
-sqlite
+psycopg2
+dj-database-url
