@@ -1,8 +1,9 @@
 import web
 import datetime
+import psycopg2
 
 #DB
-db = web.database(dbn='sqlite', db='mtask.db')
+db = web.database(dbn='postgres', db='mtask', )
 
 def get_tasks():
 	return db.select('tasks', order='enddate, priority DESC')
