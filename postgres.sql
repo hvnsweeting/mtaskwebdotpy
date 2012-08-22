@@ -1,8 +1,8 @@
 DROP TABLE IF EXISTS tasks;
 CREATE TABLE tasks (
-    id integer primary key,
+    id serial primary key,
     task text,
-    startdate date,
-    enddate date,
+    startdate text,
+    enddate text,
     priority integer
 );
