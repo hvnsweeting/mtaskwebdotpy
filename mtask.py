@@ -16,12 +16,12 @@ def round_date(delta):
 		return delta.days
 
 def get_days_left(end_date):
-	date_format = "%d-%m-%Y"
+	date_format = "%m-%d-%Y"
 	today = datetime.datetime.today()
 	return round_date(datetime.datetime.strptime(end_date, date_format) - today)
 
 def check_date_format(datestring):
-	date_format = "%d-%m-%Y"
+	date_format = "%m-%d-%Y"
 	try:
 		datetime.datetime.strptime(datestring, date_format)
 		return True
